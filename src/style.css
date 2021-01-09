@@ -1,0 +1,139 @@
+body {
+  background-image: linear-gradient(
+    to top,
+    #d5d4d0 0%,
+    #d5d4d0 1%,
+    #eeeeec 31%,
+    #efeeec 75%,
+    #e9e9e7 100%
+  );
+  padding: 100px;
+  font-family: "Thasadith", sans-serif;
+}
+h1 {
+  color: #03506f;
+  display: block;
+  font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30, 20, 10, 20;
+}
+h2 {
+  color: #0a043c;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+hr {
+  color: #03506f;
+  border: 1px solid #03506f;
+}
+.button-addon2 {
+  background-color: #03506f;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 3px 0px 3px #495464;
+  color: #f4f4f2;
+  margin-right: 5px;
+  position: relative;
+  left: 45px;
+}
+.card {
+  background-color: rgba(244, 244, 242, 0.402);
+  border: 2px solid #0a043c;
+  box-shadow: 3px 0px 3px #495464;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  min-width: 700px;
+}
+.celsius-button {
+  background-color: #03506f;
+  border: none;
+  box-shadow: 3px 0px 3px #495464;
+  color: #f4f4f2;
+  padding: 3px, 3px;
+  position: relative;
+  left: 30px;
+  top: 70px;
+}
+.farenheit-button {
+  background-color: #03506f;
+  border: none;
+  box-shadow: 3px 0px 3px #495464;
+  color: #f4f4f2;
+  padding: 3px, 3px;
+  position: relative;
+  left: 30px;
+  top: 70px;
+}
+.chosen-city {
+  font-size: 48px;
+  padding: 10, 0, 20, 0;
+}
+.col-2 {
+  text-align: center;
+}
+.col-3 {
+  width: 165px;
+}
+.day-and-weather {
+  font-size: 22px;
+  font-weight: 300;
+  width: 200px;
+}
+#dayandtime {
+  font-size: 22px;
+}
+.extra-info {
+  font-size: 14px;
+}
+.form-control {
+  background-color: rgba(255, 227, 216, 0.1);
+  box-shadow: 3px 0px 3px #495464;
+  max-width: 400px;
+  position: relative;
+  left: 40px;
+  text-align: right;
+}
+.icon {
+  color: #495464;
+}
+.row {
+  text-align: left;
+}
+.today-icon {
+  font-size: 80px;
+  text-align: center;
+  padding: 0, 30px;
+  position: relative;
+  left: 30px;
+  bottom: 20px;
+}
+.today-info {
+  padding-left: 55px;
+  padding-bottom: 10px;
+}
+.today-temp {
+  text-align: right;
+  font-size: 40px;
+  line-height: 30px;
+}
+.hilo {
+  font-size: 20px;
+  position: relative;
+  left: 20px;
+  bottom: 25px;
+}
+.weekdays {
+  padding-bottom: 26px;
+  padding-left: 80px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #bbbfca;
+  color: #03506f;
+  transition: all 200ms ease-in-out;
+}

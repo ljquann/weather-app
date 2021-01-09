@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Thasadith&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/962c29cddb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css"/>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <div class="container">
+             <h1>
+                <strong>Today's Weather In...</strong>
+            </h1>
+                 <br />
+                    <form class="input-group mb-3 search-bar" id="searchCity">
+                        <input type="text" class="form-control" id="cityform" placeholder="Type the name of a city here"
+                            aria-label="Type the name of a city name here" aria-describedby="button-addon2" />
+                        <button class="btn btn-outline-secondary button-addon2 button city button" type="submit" id="cityButton">
+                            Go
+                        </button>
+                        <button class="btn btn-outline-secondary button-addon2 button currentlocation" type="button" id="currentlocation">
+                            Current City
+                        </button>
+                    </form>
+                    <h2 class="chosen-city" id="chosencity">Seattle</h2>
+            <div class="row today-info">
+                <div class="col-3">
+                    <div class="day-and-weather">
+                   <div id="dayandtime">Wednesday</div>
+                   <div id="weatherd"> Partly Cloudy</div>
+                    </div>
+                    <div class="extra-info">
+                    Humidity: <span id="humidity">25</span>%
+                    <br />
+                    Wind: <span id="windspeed">5mph</span>
+                    </div>
+                </div>
+                <div class="col-3 today-icon icon">
+                    <i class="fas fa-cloud-sun"></i>
+                 </div>
+                <div class="col-3 today-temp">
+                   <div id="hi">65</div><div class="hilo">Hi</div>
+                    <div id="lo">42</div><div class="hilo">Lo</div>
+                </div>
+                <form class="col-sm">
+                <button type="button" class="btn btn-primary celsius-button button" id="celsiusbutton">C</button>
+                <button type="button" class="btn btn-primary farenheit-button button" id="farenheitbutton">F</button>
+                </form>
+            </div>
+                <hr />
+            <h2 class="this-week">
+                This Week
+            </h2>
+            <div class="row weekdays">
+                <div class="col-2">
+                    Thursday
+                    <br />
+                     <i class="fas fa-cloud-rain icon"></i>
+                    <br />
+                     40°/18°
+                </div>
+                <div class="col-2">
+                     Friday
+                     <br />
+                    <i class="fas fa-bolt icon"></i>
+                    <br />
+                    52°/26°
+                 </div>
+                 <div class="col-2">
+                     Saturday
+                     <br />
+                     <i class="fas fa-bolt icon"></i>
+                      <br />
+                     50°/22°
+                 </div>
+                 <div class="col-2">
+                     Sunday
+                     <br />
+                     <i class="fas fa-cloud-sun icon"></i>
+                    <br />
+                     42°/14°
+                 </div>
+                  <div class="col-2">
+                     Monday
+                      <br />
+                    <i class="fas fa-snowflake icon"></i>
+                    <br />
+                     36°/12°
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js">
+    </script>
+</body>
+</html>
