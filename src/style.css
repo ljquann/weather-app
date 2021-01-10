@@ -97,9 +97,10 @@ hr {
   left: 40px;
   text-align: right;
 }
-#github {
+.github {
   display: block;
   margin: 0 auto;
+  text-align: center;
 }
 .icon {
   color: #495464;
@@ -134,7 +135,10 @@ hr {
   padding-bottom: 26px;
   padding-left: 80px;
 }
-
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .button:hover {
   cursor: pointer;
   background-color: #bbbfca;
